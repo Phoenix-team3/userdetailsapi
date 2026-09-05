@@ -29,6 +29,9 @@ public static class UserFilterService
         if (!string.IsNullOrWhiteSpace(filters.Department))
             query = query.Where(u => u.Department.Contains(filters.Department, StringComparison.OrdinalIgnoreCase));
 
+        if (!string.IsNullOrWhiteSpace(filters.Company))
+            query = query.Where(u => u.Company.Contains(filters.Company, StringComparison.OrdinalIgnoreCase));
+
         if (!string.IsNullOrWhiteSpace(filters.Gender))
             query = query.Where(u => u.Gender.Contains(filters.Gender, StringComparison.OrdinalIgnoreCase));
 
