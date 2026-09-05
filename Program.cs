@@ -31,7 +31,7 @@ app.MapGet("/api/users", ([AsParameters] UserQueryParameters filters) =>
 .WithName("GetUsers")
 .WithTags("Users")
 .WithSummary("Get user details")
-.WithDescription("Returns mock user details. Supports optional filtering by id, firstName, lastName, email, city, country, department, gender, minAge, maxAge and isActive.")
+.WithDescription("Returns mock user details. Supports optional filtering by id, firstName, lastName, email, city, country, department, company, gender, minAge, maxAge and isActive.")
 .Produces<IEnumerable<User>>(StatusCodes.Status200OK);
 
 app.Run();

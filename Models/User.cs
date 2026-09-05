@@ -14,5 +14,6 @@ public record User
     public string City { get; init; } = string.Empty;
     public string Country { get; init; } = string.Empty;
     public string Department { get; init; } = string.Empty;
+    public string Company { get; init; } = string.Empty;
     public bool IsActive { get; init; }
 }

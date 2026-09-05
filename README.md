@@ -25,6 +25,7 @@ Query parameters (all optional, combinable):
 | city        | string | contains (ci)     |
 | country     | string | contains (ci)     |
 | department  | string | contains (ci)     |
+| company     | string | contains (ci)     |
 | gender      | string | contains (ci)     |
 | minAge      | int    | >=                |
 | maxAge      | int    | <=                |
